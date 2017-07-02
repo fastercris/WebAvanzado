@@ -1,0 +1,25 @@
+.logos{
+	width: 20%;
+	height: 20%;
+}
+.galeria-container{
+	background-color: #008000;
+	padding: 50px;
+}
+
+ul li{
+	cursor: pointer;
+}
+
+ul li:hover{
+	opacity:0.8;
+}
+
+.tache{
+	color: #f1f1f1;
+	font-size: 30px;
+	position: relative;
+	top: -45px;
+	left: -45px;
+	cursor: pointer;
+}

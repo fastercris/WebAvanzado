@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Paint en jQuery</title>
+</head>
+<body>
+	<!--Canvas nos va a permitir el renderizado de imagenes en 2D, ANIMACIONES-->
+	<canvas width="600" height="400"></canvas>
+	<div class="controls">
+		<ul>
+			<li class="red selected"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+		</ul>
+		<button id="revelarColor">Nuevo color</button>	
+		<button id="eraser">Goma</button>
+		<div id="colorSelect">
+			<span id="newColor"></span>
+			<div class="sliders">
+				<p>
+					<label for="red">Rojo</label>
+					<input id="red" name="red" type="range" min=0 max=255 value=0>
+				</p>
+				<p>
+					<label for="blue">Azul</label>
+					<input id="blue" name="blue" type="range" min=0 max=255 value=0>
+				</p>
+				<p>
+					<label for="yellow">Amarillo</label>
+					<input id="yellow" name="yellow" type="range" min=0 max=255 value=0>
+				</p>
+			</div>
+			<div>
+				<button id="addColor">Agregar Color</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/app.js"></script>
+</html>
